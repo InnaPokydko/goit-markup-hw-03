@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -19,28 +25,28 @@ body {
   line-height: 1.7;
 }
 
-::after, ::before{
-  box-sizing: border-box;
-}
-
 /*container*/
-. container {
+.container {
   width: 1200px;
   align-items: center;
   padding-left: 0;
   padding-right: 0;
   margin-left: auto;
   margin-right: auto;
-   }
-   
-   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-   }
+}
 
-h1, h2, h3, p, ul {
-margin: 0px;
-padding: 0px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 /*header*/
@@ -55,9 +61,7 @@ padding: 0px;
 }
 
 .item {
-
 }
-
 
 /*logo*/
 .logo {
@@ -72,7 +76,6 @@ padding: 0px;
 
 .header-studio {
   color: var(--secondary-text-color);
-  
 }
 
 /*nav list*/
@@ -83,7 +86,7 @@ padding: 0px;
 }
 
 .nav-links {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
 
@@ -115,7 +118,6 @@ padding: 0px;
 .auth-nav {
   display: flex;
   margin-left: auto;
-  
 }
 
 .header-emeil,
@@ -151,7 +153,7 @@ padding: 0px;
 
   background-color: var(--accent-color);
   color: var(--primary-background-color);
- 
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -176,11 +178,11 @@ padding: 0px;
 
 /*features*/
 .features-list {
-display: flex;
+  display: flex;
 }
 
 .features-list .item {
-width: 270px;
+  width: 270px;
 }
 
 .feature.list-title {
@@ -231,8 +233,8 @@ width: 270px;
 
 h2,
 h3 {
-  color: var(--title-text-color)
-  }
+  color: var(--title-text-color);
+}
 
 /*Приховані заголовки*/
 .visually-hidden {
