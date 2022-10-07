@@ -1,7 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 :root {
@@ -14,6 +18,8 @@
   --section-background-color: #f5f4fa;
   --button-background-color: #188ce8;
   --footer-text-color: rgba(255, 255, 255, 0.6);
+  --border-bottom: #ECECEC;
+  --border-color: #EEEEEE;
 }
 
 body {
@@ -31,6 +37,7 @@ body {
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: 215px;
 }
 
 .section {
@@ -51,6 +58,7 @@ ul {
 /*header*/
 .header {
   background-color: var(--primary-background-color);
+  border-bottom: 1px solid var(--border-bottom);
 }
 
 .list {
@@ -206,10 +214,6 @@ ul {
   margin-right: 30px;
 }
 
-.features-item-last {
-  margin-right: 0;
-}
-
 .feature.list-title {
   color: var(--title-text-color);
 
@@ -240,10 +244,6 @@ ul {
   margin-right: 30px;
 }
 
-.works-item-last {
-  margin-right: 0;
-}
-
 /*teame*/
 .teame {
   background-color: var(--section-background-color);
@@ -255,16 +255,20 @@ ul {
 
 .teame-item {
   background-color: var(--primary-background-color);
+  width: 270px;
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px; 
+  border: 1px solid transparent; 
 }
 
-.teame-item-last {
+.last {
   margin-right: 0;
-  list-style: none;
-}
+  }
 
 .name {
   color: var(--title-text-color);
@@ -285,9 +289,10 @@ ul {
 }
 
 .team-container {
-  text-align: center;
-  padding: 30 70;
   width: 270px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*title h2*/
@@ -323,6 +328,12 @@ h3 {
 /*footer*/
 .footer {
   background-color: var(--secondary-background-color);
+  
+}
+
+.lists {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .logo {
@@ -336,7 +347,7 @@ h3 {
 
 .footer-list {
   list-style: none;
-}
+    }
 
 .address-link {
   color: var(--primary-background-color);
@@ -369,12 +380,32 @@ h3 {
 }
 
 /*portfolio.html*/
+.portfolio {
+  margin: 0;
+}
 
 .portfolio-title {
 }
 
-/*button*/
+.filter {
+display: flex;
+    justify-content: center;
+    margin-left: 8px;
+    margin-bottom: 50px;
+}
+
+.filter-item {
+  margin-left: 8px;
+}
+
+/*button portfolio*/
 .filter-button {
+  display: inline;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+
   background-color: var(--section-background-color);
   color: var(--title-text-color);
 
@@ -404,6 +435,10 @@ h3 {
 
 .portfolio-links {
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 /*.portfolio.link {
@@ -422,11 +457,26 @@ h3 {
     
 }*/
 
+.filter-item {
+  margin: 0;
+}
+
+.portfolio-list {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.project {
+  width: 370px;
+    padding: 20px 24px;
+    border: 1px solid var(--border-color);
+  }
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-}
+ }
 
 .project-text {
   color: var(--primary-text-color);
