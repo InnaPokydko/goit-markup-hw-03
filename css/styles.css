@@ -29,11 +29,9 @@ body {
 .container {
   width: 1200px;
   align-items: center;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
+  padding-left: 15px;
+  padding-right: 15px;
+    }
 
 .section {
   padding-top: 94px;
@@ -51,17 +49,22 @@ ul {
 
 /*header*/
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--primary-background-color);
-}
-
+       }
+  
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.item {
+.nav-item {
+  margin-bottom: 50;
 }
+
 
 /*logo*/
 .logo {
@@ -92,6 +95,7 @@ ul {
 
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .link {
@@ -138,6 +142,7 @@ ul {
   line-height: 1.36;
 
   text-transform: uppercase;
+  text-align: center;
 
   padding: 0;
   margin: 0;
@@ -181,8 +186,14 @@ ul {
   display: flex;
 }
 
-.features-list .item {
+.features-list .features-item {
   width: 270px;
+}
+
+.features-item {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
 }
 
 .feature.list-title {
@@ -195,9 +206,15 @@ ul {
 
 .list-title {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 /*works*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /*teame*/
 .teame {
@@ -220,6 +237,10 @@ ul {
 .profession {
   font-size: 16px;
   line-height: 1.19;
+}
+
+.team-container {
+  padding: 30 70;
 }
 
 /*title h2*/
