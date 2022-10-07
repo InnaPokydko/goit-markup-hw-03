@@ -18,8 +18,8 @@ html {
   --section-background-color: #f5f4fa;
   --button-background-color: #188ce8;
   --footer-text-color: rgba(255, 255, 255, 0.6);
-  --border-bottom: #ECECEC;
-  --border-color: #EEEEEE;
+  --border-bottom: #ececec;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -261,14 +261,15 @@ ul {
   margin-bottom: 0;
   margin-right: 30px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px; 
-  border: 1px solid transparent; 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid transparent;
 }
 
 .last {
   margin-right: 0;
-  }
+}
 
 .name {
   color: var(--title-text-color);
@@ -328,7 +329,9 @@ h3 {
 /*footer*/
 .footer {
   background-color: var(--secondary-background-color);
-  
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .lists {
@@ -347,7 +350,7 @@ h3 {
 
 .footer-list {
   list-style: none;
-    }
+}
 
 .address-link {
   color: var(--primary-background-color);
@@ -379,6 +382,14 @@ h3 {
   color: var(--accent-color);
 }
 
+.address-item {
+  margin-top: 9px;
+}
+
+.footer-list {
+  margin-top: 20px;
+}
+
 /*portfolio.html*/
 .portfolio {
   margin: 0;
@@ -388,10 +399,10 @@ h3 {
 }
 
 .filter {
-display: flex;
-    justify-content: center;
-    margin-left: 8px;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 8px;
+  margin-bottom: 50px;
 }
 
 .filter-item {
@@ -405,6 +416,7 @@ display: flex;
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
+  margin-right: 8px;
 
   background-color: var(--section-background-color);
   color: var(--title-text-color);
@@ -433,12 +445,18 @@ display: flex;
   color: var(--primary-background-color);
 }
 
+.current.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .portfolio-links {
   list-style: none;
 
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 /*.portfolio.link {
@@ -466,17 +484,21 @@ display: flex;
   margin-bottom: 30px;
 }
 
+.portfolio-list:nth-last-child(3n) {
+  margin-right: 0;
+}
+
 .project {
   width: 370px;
-    padding: 20px 24px;
-    border: 1px solid var(--border-color);
-  }
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+}
 
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
- }
+}
 
 .project-text {
   color: var(--primary-text-color);
