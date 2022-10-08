@@ -1,11 +1,7 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 :root {
@@ -37,7 +33,8 @@ body {
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 215px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -61,14 +58,11 @@ ul {
   border-bottom: 1px solid var(--border-bottom);
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item {
-  margin-right: 50px;
+.heder-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
 /*logo*/
@@ -80,7 +74,9 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
 
+.header-logo {
   margin-right: 93px;
 }
 
@@ -91,8 +87,17 @@ ul {
 /*nav list*/
 .nav {
   display: flex;
-  padding: 32px 0px;
   margin-left: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 50px;
 }
 
 .nav-links {
@@ -103,7 +108,13 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+}
+
+.nav-link {
+  display: flex;
+  padding: 32px 0;
+  color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .link {
@@ -143,6 +154,7 @@ ul {
 .header-emeil,
 .header-tel {
   color: var(--primary-text-color);
+  padding: 32px 0;
 }
 
 /* hero */
@@ -163,7 +175,8 @@ ul {
   text-transform: uppercase;
 
   padding: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+  width: 700px;
 }
 
 /* button */
@@ -223,11 +236,18 @@ ul {
 }
 
 .list-title {
+  color: var(--title-text-color);
+
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 /*works*/
+.works {
+  padding-top: 0;
+}
+
 .works-list {
   display: inline-flex;
 }
@@ -278,7 +298,7 @@ ul {
   font-size: 16px;
   line-height: 1.19;
 
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -286,14 +306,13 @@ ul {
   font-size: 16px;
   line-height: 1.19;
 
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .team-container {
   width: 270px;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 30px;
 }
 
 /*title h2*/
@@ -305,11 +324,6 @@ ul {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-}
-
-h2,
-h3 {
-  color: var(--title-text-color);
 }
 
 /*Приховані заголовки*/
@@ -382,7 +396,7 @@ h3 {
   color: var(--accent-color);
 }
 
-.address-item {
+.address-item:not(:first-child) {
   margin-top: 9px;
 }
 
@@ -400,13 +414,9 @@ h3 {
 
 .filter {
   display: flex;
+  gap: 8px;
   justify-content: center;
-  margin-left: 8px;
   margin-bottom: 50px;
-}
-
-.filter-item {
-  margin-left: 8px;
 }
 
 /*button portfolio*/
@@ -416,7 +426,6 @@ h3 {
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
-  margin-right: 8px;
 
   background-color: var(--section-background-color);
   color: var(--title-text-color);
@@ -425,6 +434,9 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+
+  box-shadow: 0px, 2px rgba(0, 0, 0, 0.12), 0px, 1px rgba(0, 0, 0, 0.08), 0px,
+    3px rgba(0, 0, 0, 0.1);
 }
 
 .filter-button {
@@ -457,6 +469,8 @@ h3 {
 
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 /*.portfolio.link {
@@ -484,20 +498,18 @@ h3 {
   margin-bottom: 30px;
 }
 
-.portfolio-list:nth-child(3n) {
-  margin-right: 0;
-}
-
 .project {
   width: 370px;
   padding: 20px 24px;
   border: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
 }
 
 .project-text {
