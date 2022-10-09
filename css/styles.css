@@ -404,6 +404,11 @@ ul {
   margin: 0;
 }
 
+.portfolio-link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
 .portfolio-title {
 }
 
@@ -451,6 +456,7 @@ ul {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
 }
+
 
 .current.button {
   font-family: inherit;
